@@ -67,6 +67,7 @@ body:not(.alt-chkbx-off) {
 
 /*Checked Text*/
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]),
+ul > li.task-list-item.is-checked > p, // Spaced Checklists
 ul > li.task-list-item.is-checked, 
 ol > li.task-list-item.is-checked {
     color: var(--lines, var(--text-faint));

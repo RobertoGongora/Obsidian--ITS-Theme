@@ -21,8 +21,15 @@
 .task-list-item input[type=checkbox],
 li.task-list-item {
     vertical-align: 1px;
-    margin-left: 0px;
-    margin-right: 10px;
+    // margin-left: -1px;
+    // margin-right: 10px;
+}
+li.task-list-item .task-list-item-checkbox {
+    margin-left: -1px;
+}
+body:not(.b-li-o) ul > li.task-list-item .task-list-item-checkbox {
+    margin-left: -27px;
+    margin-right: 11px;
 }
 
 /*Checkbox Checked color*/

@@ -55,6 +55,20 @@
 { border-color: var(--b-l-6) !important; }
 
 /*Rainbow Indenation Guides*/
+.bul-li-col {
+    & .markdown-source-view.mod-cm6 .cm-indent:not(.cm-active-indent) {
+        &:nth-child(1)::before { border-color: var(--b-l-1); }
+        &:nth-child(2)::before { border-color: var(--b-l-2); }
+        &:nth-child(3)::before { border-color: var(--b-l-3); }
+        &:nth-child(4)::before { border-color: var(--b-l-4); }
+        &:nth-child(5)::before { border-color: var(--b-l-5); }
+        &:nth-child(6)::before { border-color: var(--b-l-6); }
+    }
+    & .markdown-source-view.mod-cm6 .cm-active-indent::before {
+        border-color: var(--accent2-lite);
+    }
+
+}
 .bul-li-col.ig-lists .HyperMD-list-line  {
     & span.cm-hmd-list-indent .ig-tab:before { background-color: var(--b-l-1); }
     & span.cm-hmd-list-indent .ig-tab:nth-child(2):before,
